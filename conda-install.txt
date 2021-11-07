@@ -1,0 +1,18 @@
+# To be run in commandline
+
+source ~/anaconda3/etc/profile.d/conda.sh
+conda create -n open-mmlab python=3.7 -y
+conda activate open-mmlab
+conda install pytorch torchvision -c pytorch
+
+# To be run in commandline
+
+conda create -n xeus-cling
+source activate xeus-cling
+conda install -c conda-forge xeus-cling
+source activate xeus-cling
+conda install -c r r-caret
+conda install -c conda-forge r-dplyr
+conda install -c r r-rocr
+conda install -c conda-forge r-onehot
+conda install -c conda-forge r-nnet
