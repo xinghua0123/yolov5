@@ -1,0 +1,10 @@
+ssh-keygen -t ed25519 -C "ron.xing@hpe.com"
+cat /home/ad_admin1/.ssh/id_ed25519.pub
+** Deploy Keys on Github **
+git clone git@github.com:xinghua0123/yolov5-test.git
+git config --global user.email "ron.xing@hpe.com"
+git config --global user.name "Ron"
+touch test-Nov-4
+git add *
+git commit -m 'newly added test file'
+git push origin
